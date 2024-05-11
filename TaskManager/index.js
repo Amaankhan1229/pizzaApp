@@ -68,7 +68,18 @@ function updateTask(taskId){
         console.log("unsuccessful updating");
    
      }   
-     printTask();
+    //  printTask();
+    //  function updateTask(taskId) {
+    //     let taskToUpdate = taskList.find(task => task.id === taskId);
+    
+    //     document.getElementById("id").value = taskToUpdate.id;
+    //     document.getElementById("title").value = taskToUpdate.title;
+    //     document.getElementById("desc").value = taskToUpdate.desc;
+    //     document.getElementById("date").value = taskToUpdate.date;
+    
+    //     document.querySelector("button").innerText = "Update Task";
+    //     document.querySelector("button").onclick = function() {
+    //         saveUpdatedTask(task)}
 
 }
 

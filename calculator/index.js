@@ -1,6 +1,7 @@
 let screen = document.getElementById('screen');
-var buttons = document.querySelectorAll('button');z
+var buttons = document.querySelectorAll('button');
 let screenValue = '';
+let buttonText= buttons.forEach(())
         if (buttonText == 'Back') {
             screenValue=screenValue.slice(0,-1);
             screen.value=screenValue;
