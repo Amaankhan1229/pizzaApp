@@ -1,8 +1,21 @@
 let screen = document.getElementById('screen');
 var buttons = document.querySelectorAll('button');
 let screenValue = '';
-let buttonText= buttons.forEach(())
-        if (buttonText == 'Back') {
+buttons.forEach((btn)=>{
+    let btntext=btn.target.innerText;
+    screenValue+=btntext;
+    screen.value=screenValue;
+})
+
+       
+
+
+
+
+
+
+
+if (buttonText == 'Back') {
             screenValue=screenValue.slice(0,-1);
             screen.value=screenValue;
         }

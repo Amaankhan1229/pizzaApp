@@ -1,23 +1,13 @@
-
-var buttons = document.querySelectorAll('button');
-let screenValue = '';
-function takeInput(value){
-    console.log(value);
-    if(value=="+") {
-            str+="+";
-        }
-    else if (buttonText == '=') {
-            screen.value = eval(screenValue);
-        }
-    else if(buttonText=="AC")
-            {
-                screenValue="";
-                screen.value=screenValue;
-            }
-    else {
-            screenValue += buttonText;
-            screen.value = screenValue;
-        }
-
+function addToDisplay(value) {
+    document.getElementById('display').value += value;
 }
 
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
+
+function calculate() {
+    let InputScreen = document.getElementById('display').value;
+    let result=eval(InputScreen);
+    document.getElementById('display').value = result;
+}
